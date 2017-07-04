@@ -1,0 +1,1358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="IFRO_TECA">
+  <ClassDiagramComponents>
+    <Class name="Tela_Pesquisar_Livro" package="views" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="ld" type="Livro_Dao" visibility="package"/>
+        <Field name="l" type="LivroModel" visibility="package"/>
+        <Field name="botao_Buscar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="botao_ConsultarPorAutor" type="javax.swing.JRadioButton" visibility="private"/>
+        <Field name="botao_ConsultarPorTitulo" type="javax.swing.JRadioButton" visibility="private"/>
+        <Field name="botao_ConsultarPorTombamento" type="javax.swing.JRadioButton" visibility="private"/>
+        <Field name="buttonGroup1" type="javax.swing.ButtonGroup" visibility="private"/>
+        <Field name="consultaTombo_Field" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="consulta_Field" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="painel_Tabela" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="painel_pesquisa" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="tabela_Consulta_Livro" type="javax.swing.JTable" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="desativaCampos" returnType="void" visibility="private"/>
+        <Method name="botao_BuscarActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Cadastro_Aluno" package="views" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="cursoDao" type="Curso_Dao" visibility="package"/>
+        <Field name="usuarioDao" type="Usuario_Dao" visibility="package"/>
+        <Field name="usuarioModel" type="UsuarioModel" visibility="package"/>
+        <Field name="formata" type="FormataDatas" visibility="package"/>
+        <Field name="cursoModel" type="CursoModel" visibility="package"/>
+        <Field name="cidadeModel" type="Cidade_Dao" visibility="package"/>
+        <Field name="cidadeDao" type="Cidade_Dao" visibility="package"/>
+        <Field name="bairro_Field" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="bota_Sair" type="javax.swing.JButton" visibility="private"/>
+        <Field name="botao_Aluno" type="javax.swing.JRadioButton" visibility="private"/>
+        <Field name="botao_Funcionario" type="javax.swing.JRadioButton" visibility="private"/>
+        <Field name="botao_Salvar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="buttonGroup1" type="javax.swing.ButtonGroup" visibility="private"/>
+        <Field name="cidade_Box" type="javax.swing.JComboBox" visibility="private"/>
+        <Field name="cpf_Field" type="javax.swing.JFormattedTextField" visibility="private"/>
+        <Field name="curso_Box" type="javax.swing.JComboBox" visibility="private"/>
+        <Field name="dataNasc_Field" type="javax.swing.JFormattedTextField" visibility="private"/>
+        <Field name="email_Field" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="id_Field" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel10" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel11" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel12" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel13" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel14" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel15" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel16" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel17" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel6" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel7" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel8" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel9" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="logradouro_Field" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="nomeMae_Field" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="nomePai_Field" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="nome_Field" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="numero_Field" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="orgExp_Field" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="painel_DadosPessoais" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="painel_DadosPessoais1" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="painel_Fundo" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="rg_Field" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="sexo_Box" type="javax.swing.JComboBox" visibility="private"/>
+        <Field name="telefone_Field" type="javax.swing.JFormattedTextField" visibility="private"/>
+        <Field name="uf_Box" type="javax.swing.JComboBox" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="java.awt.Frame" name="parent"/>
+          <Argument type="boolean" name="modal"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="bota_SairActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="uf_BoxActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="botao_SalvarActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="botao_AlunoActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="botao_FuncionarioActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="limparCampos" returnType="void" visibility="private"/>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Tela_Cadastrar_Usuario_Senha" package="views" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields>
+        <Field name="idUsuario_Field" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jButton1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton2" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton3" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton4" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="painel_RealizarCadastro" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="permissao_box" type="javax.swing.JComboBox" visibility="private"/>
+        <Field name="senha_Field" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="userName_Field" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="jButton4ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Consultar_Usuarios" package="views" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Fields>
+        <Field name="formatar" type="FormataDatas" visibility="package"/>
+        <Field name="cursoDao" type="Curso_Dao" visibility="package"/>
+        <Field name="usuarioDao" type="Usuario_Dao" visibility="package"/>
+        <Field name="formata" type="FormataDatas" visibility="package"/>
+        <Field name="cursoModel" type="CursoModel" visibility="package"/>
+        <Field name="cidadeDao" type="Cidade_Dao" visibility="package"/>
+        <Field name="usuarioModel" type="UsuarioModel" visibility="package"/>
+        <Field name="bairro_Field" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="botao_Buscar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="botao_ConsultarPorCPF" type="javax.swing.JRadioButton" visibility="private"/>
+        <Field name="botao_ConsultarPorNome" type="javax.swing.JRadioButton" visibility="private"/>
+        <Field name="botao_Excluir" type="javax.swing.JButton" visibility="private"/>
+        <Field name="botao_NovaConsulta" type="javax.swing.JButton" visibility="private"/>
+        <Field name="botao_Sair" type="javax.swing.JButton" visibility="private"/>
+        <Field name="botao_Salvar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="buttonGroup1" type="javax.swing.ButtonGroup" visibility="private"/>
+        <Field name="cidade_Box" type="javax.swing.JComboBox" visibility="private"/>
+        <Field name="cidade_Field" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="consultaPorNome_Field" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="cpf_Consulta" type="javax.swing.JFormattedTextField" visibility="private"/>
+        <Field name="cpf_Field" type="javax.swing.JFormattedTextField" visibility="private"/>
+        <Field name="curso_Field" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="dataNasc_Field" type="javax.swing.JFormattedTextField" visibility="private"/>
+        <Field name="email_Field" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="id_Field" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel10" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel11" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel12" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel13" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel14" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel15" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel16" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel17" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel18" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel6" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel7" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel8" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel9" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="logradouro_Field" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="nomeMae_Field" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="nomePai_Field" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="nome_Field" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="numero_Field" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="orgExp_Field" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="painel_DadosConsulta" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="painel_DadosPessoais" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="rg_Field" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="sexo_Box" type="javax.swing.JComboBox" visibility="private"/>
+        <Field name="tabela_ConsultaUsuario" type="javax.swing.JTable" visibility="private"/>
+        <Field name="telefone_Field" type="javax.swing.JFormattedTextField" visibility="private"/>
+        <Field name="tipoUsuario_Field" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="uf_Box" type="javax.swing.JComboBox" visibility="private"/>
+        <Field name="uf_Field" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="java.awt.Frame" name="parent"/>
+          <Argument type="boolean" name="modal"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="botao_BuscarActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="botao_ConsultarPorNomeMouseClicked" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="botao_ConsultarPorCPFActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="botao_NovaConsultaActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="tabela_ConsultaUsuarioMouseClicked" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="botao_SalvarActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="uf_BoxActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="botao_SairActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="limparTabela" returnType="void" visibility="private"/>
+        <Method name="limpar_E_DesabilitarCampos" returnType="void" visibility="private">
+          <Argument type="boolean" name="x"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Tela_Cadastrar_Usuario" package="views" visibility="public" xPosition="1220.0" yPosition="20.0">
+      <Fields>
+        <Field name="bairro_Field" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="botao_Alterar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="botao_Consultar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="botao_Excluir" type="javax.swing.JButton" visibility="private"/>
+        <Field name="botao_Novo" type="javax.swing.JButton" visibility="private"/>
+        <Field name="botao_Salvar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="cidade_Box" type="javax.swing.JComboBox" visibility="private"/>
+        <Field name="codigo_Field" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="cpf_Field" type="javax.swing.JFormattedTextField" visibility="private"/>
+        <Field name="curso_Box" type="javax.swing.JComboBox" visibility="private"/>
+        <Field name="dataNasc_Field" type="javax.swing.JFormattedTextField" visibility="private"/>
+        <Field name="email_Field" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jComboBox1" type="javax.swing.JComboBox" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel10" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel11" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel12" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel13" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel14" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel15" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel16" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel17" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel18" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel19" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel6" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel7" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel8" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel9" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="logradouro_Field" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="nomeConsulta_Field" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="nomeMae_Label" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="nomePai_Label" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="nome_Field" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="numero_Field" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="orgExp_Field" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="painel_Fundo" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="painel_NomePai_Mae_Curso" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="rg_Field" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tabela_ConsultaUsuarios" type="javax.swing.JTable" visibility="private"/>
+        <Field name="telefone_Field" type="javax.swing.JFormattedTextField" visibility="private"/>
+        <Field name="tipoUsuario_Box" type="javax.swing.JComboBox" visibility="private"/>
+        <Field name="uf_Box" type="javax.swing.JComboBox" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+      </Methods>
+    </Class>
+    <Class name="Teste" package="views" visibility="public" xPosition="1520.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Tela_Principal" package="views" visibility="public" xPosition="1820.0" yPosition="20.0">
+      <Fields>
+        <Field name="tpa" type="Tela_Pesquisar_Livro" visibility="package"/>
+        <Field name="tcu" type="Tela_Cadastrar_Usuario" visibility="package"/>
+        <Field name="tcus" type="Tela_Cadastrar_Usuario_Senha" visibility="package"/>
+        <Field name="pl" type="Tela_Pesquisar_Livro" visibility="package"/>
+        <Field name="x" type="UsuarioSenha_Model" visibility="package"/>
+        <Field name="fundo_TelaPrincipal" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jMenu3" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="jMenuBar1" type="javax.swing.JMenuBar" visibility="private"/>
+        <Field name="menuAcervo" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="menuAcervo_Consultar" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="menuAcervo_Novo" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="menuAjuda" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="menuAjuda_Ajuda" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="menuAjuda_Sair" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="menuServicos_Emprestimos" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="menuServicos_Relatórios" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="menuServicos_Relatórios_Devolucoes" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="menuServicos_Relatórios_Emprestimos" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="menuServicos_Relatórios_Renovacoes" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="menuSistema" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="menuSistema_UsuarioSistema" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="menuUsuario_Consultar" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="menuUsuario_Novo" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="menu_Acervo_Consultar_Livro" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="menu_Usuario" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="usuario_Logado" type="javax.swing.JLabel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="UsuarioSenha_Model" name="u"/>
+        </Constructor>
+        <Constructor visibility="private"/>
+      </Constructors>
+      <Methods>
+        <Method name="opcoes" returnType="void" visibility="public"/>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="menuAjuda_SairActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="menuUsuario_NovoActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="menuSistema_UsuarioSistemaActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="menu_Acervo_Consultar_LivroActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="menuUsuario_ConsultarActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Tela_Login" package="views" visibility="public" xPosition="2120.0" yPosition="20.0">
+      <Fields>
+        <Field name="botao_Acessar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="botao_Cancelar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="fundo_TelaLogin" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="senha_Field" type="javax.swing.JPasswordField" visibility="private"/>
+        <Field name="usuario_Field" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="botao_CancelarActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="botao_AcessarActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Revista_Dao" package="alternativa" visibility="public" xPosition="20.0" yPosition="420.0">
+      <Fields>
+        <Field name="conec" type="ConexaoSingleton" visibility="package"/>
+        <Field name="con" type="Connection" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="prepareStatemente_REVISTA" returnType="void" visibility="private">
+          <Argument type="RevistaModel" name="r"/>
+          <Argument type="String" name="INSERT"/>
+        </Method>
+        <Method name="cadastrar_Revista" returnType="void" visibility="public">
+          <Argument type="RevistaModel" name="r"/>
+        </Method>
+        <Method name="alterar_Revista" returnType="void" visibility="public">
+          <Argument type="RevistaModel" name="r"/>
+        </Method>
+        <Method name="deletar_Revista" returnType="void" visibility="public">
+          <Argument type="RevistaModel" name="r"/>
+        </Method>
+        <Method name="consultar_Revista_PorTitulo" returnType="List&lt;RevistaModel&gt;" visibility="public">
+          <Argument type="RevistaModel" name="r"/>
+          <Argument type="String" name="consultarPor"/>
+        </Method>
+        <Method name="consultar_Revista_PorTombamento" returnType="List&lt;RevistaModel&gt;" visibility="public">
+          <Argument type="RevistaModel" name="r"/>
+          <Argument type="String" name="consultarPor"/>
+        </Method>
+        <Method name="consultar_Revista_PorFormaAquisicao" returnType="List&lt;RevistaModel&gt;" visibility="public">
+          <Argument type="RevistaModel" name="r"/>
+          <Argument type="String" name="consultarPor"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Renovacao_Dao" package="alternativa" visibility="public" xPosition="320.0" yPosition="420.0">
+      <Fields>
+        <Field name="conec" type="ConexaoSingleton" visibility="package"/>
+        <Field name="con" type="Connection" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="Renovar" returnType="void" visibility="public">
+          <Argument type="Renovacao_Model" name="c"/>
+        </Method>
+        <Method name="consultar_TODAS_Renovacoes" returnType="List&lt;Renovacao_Model&gt;" visibility="public"/>
+        <Method name="consultas_Especifica_Renovacoes" returnType="List&lt;Renovacao_Model&gt;" visibility="public">
+          <Argument type="UsuarioModel" name="us"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ConexaoSingleton" package="alternativa" visibility="public" xPosition="620.0" yPosition="420.0">
+      <Fields>
+        <Field name="con" type="Connection" visibility="private" isStatic="true"/>
+        <Field name="instancia" type="ConexaoSingleton" visibility="private" isStatic="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="private"/>
+      </Constructors>
+      <Methods>
+        <Method name="getConexaoSingleton" returnType="ConexaoSingleton" visibility="public" isStatic="true"/>
+        <Method name="obterConexao" returnType="Connection" visibility="public" isStatic="true"/>
+      </Methods>
+    </Class>
+    <Class name="Cidade_Dao" package="alternativa" visibility="public" xPosition="920.0" yPosition="420.0">
+      <Fields>
+        <Field name="conec" type="ConexaoSingleton" visibility="package"/>
+        <Field name="con" type="Connection" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="consultar_NomeCidade" returnType="List&lt;Cidade_Model&gt;" visibility="public">
+          <Argument type="String" name="uf"/>
+        </Method>
+        <Method name="consultar_ID" returnType="int" visibility="public">
+          <Argument type="String" name="nome"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="HistoricoLogin_Dao" package="alternativa" visibility="public" xPosition="1220.0" yPosition="420.0">
+      <Fields>
+        <Field name="conec" type="ConexaoSingleton" visibility="package"/>
+        <Field name="con" type="Connection" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="cadastrarLogin" returnType="void" visibility="public">
+          <Argument type="UsuarioSenha_Model" name="l"/>
+        </Method>
+        <Method name="consultar_Historio_Login" returnType="List&lt;HistoricoLogin_Model&gt;" visibility="public">
+          <Argument type="UsuarioModel" name="ul"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Usuario_Dao" package="alternativa" visibility="public" xPosition="1520.0" yPosition="420.0">
+      <Fields>
+        <Field name="conec" type="ConexaoSingleton" visibility="package"/>
+        <Field name="con" type="Connection" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="prepareState_Aluno" returnType="void" visibility="private">
+          <Argument type="UsuarioModel" name="usuario"/>
+          <Argument type="String" name="acao"/>
+        </Method>
+        <Method name="prepareState_Funcionario" returnType="void" visibility="private">
+          <Argument type="UsuarioModel" name="usuario"/>
+          <Argument type="String" name="acao"/>
+        </Method>
+        <Method name="cadastrar_Aluno" returnType="void" visibility="public">
+          <Argument type="UsuarioModel" name="usuario"/>
+        </Method>
+        <Method name="cadastrar_Funcionario" returnType="void" visibility="public">
+          <Argument type="UsuarioModel" name="usuario"/>
+        </Method>
+        <Method name="alterar_Aluno" returnType="void" visibility="public">
+          <Argument type="UsuarioModel" name="usuario"/>
+        </Method>
+        <Method name="alterar_Funcionario" returnType="void" visibility="public">
+          <Argument type="UsuarioModel" name="usuario"/>
+        </Method>
+        <Method name="deletarUsuario" returnType="void" visibility="public">
+          <Argument type="UsuarioModel" name="usuario"/>
+        </Method>
+        <Method name="consultar_Nome_CPF__PorNome" returnType="List&lt;UsuarioModel&gt;" visibility="public">
+          <Argument type="UsuarioModel" name="us"/>
+        </Method>
+        <Method name="consultar_TodosOsDados_PorNome" returnType="List&lt;UsuarioModel&gt;" visibility="public">
+          <Argument type="UsuarioModel" name="usuario"/>
+        </Method>
+        <Method name="consultar_TodosOsDados_PorCPF" returnType="List&lt;UsuarioModel&gt;" visibility="public">
+          <Argument type="UsuarioModel" name="usuario"/>
+        </Method>
+        <Method name="consultar_TodosOsDados_USUARIOS_PorIdUSUARIO" returnType="UsuarioModel" visibility="public">
+          <Argument type="UsuarioModel" name="us"/>
+        </Method>
+        <Method name="consultar_TodosOsDados_DeTodoUsuarios" returnType="List&lt;UsuarioModel&gt;" visibility="public"/>
+        <Method name="consultarJasper" returnType="ResultSet" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Midias_Dao" package="alternativa" visibility="public" xPosition="1820.0" yPosition="420.0">
+      <Fields>
+        <Field name="conec" type="ConexaoSingleton" visibility="package"/>
+        <Field name="con" type="Connection" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="cadastrarMidias" returnType="void" visibility="public">
+          <Argument type="MidiasModel" name="midias"/>
+        </Method>
+        <Method name="alterarMidias" returnType="void" visibility="public">
+          <Argument type="MidiasModel" name="midias"/>
+        </Method>
+        <Method name="deletarMidias" returnType="void" visibility="public">
+          <Argument type="MidiasModel" name="midias"/>
+        </Method>
+        <Method name="consultarMidias_PorTitulo" returnType="List&lt;MidiasModel&gt;" visibility="public">
+          <Argument type="MidiasModel" name="midias"/>
+        </Method>
+        <Method name="consultarMidias_PorTombamento" returnType="List&lt;MidiasModel&gt;" visibility="public">
+          <Argument type="MidiasModel" name="midias"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Emprestimo_Dao" package="alternativa" visibility="public" xPosition="2120.0" yPosition="420.0">
+      <Fields>
+        <Field name="conec" type="ConexaoSingleton" visibility="package"/>
+        <Field name="con" type="Connection" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="Emprestar" returnType="void" visibility="public">
+          <Argument type="Emprestimo_Model" name="c"/>
+        </Method>
+        <Method name="consultar_TODOS_Emprestimos" returnType="List&lt;Emprestimo_Model&gt;" visibility="public">
+          <Argument type="UsuarioModel" name="us"/>
+        </Method>
+        <Method name="consultas_Especifica_Emprestimo" returnType="List&lt;Emprestimo_Model&gt;" visibility="public">
+          <Argument type="UsuarioModel" name="us"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Devolucao_Dao" package="alternativa" visibility="public" xPosition="20.0" yPosition="820.0">
+      <Fields>
+        <Field name="conec" type="ConexaoSingleton" visibility="package"/>
+        <Field name="con" type="Connection" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="Devolver" returnType="void" visibility="public">
+          <Argument type="Devolucao_Model" name="c"/>
+        </Method>
+        <Method name="consultar_TODAS_Devolucoes" returnType="List&lt;Devolucao_Model&gt;" visibility="public">
+          <Argument type="UsuarioModel" name="us"/>
+        </Method>
+        <Method name="consultas_Especifica_Devolucao" returnType="List&lt;Devolucao_Model&gt;" visibility="public">
+          <Argument type="UsuarioModel" name="us"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="UsuarioSenha_Dao" package="alternativa" visibility="public" xPosition="320.0" yPosition="820.0">
+      <Fields>
+        <Field name="conec" type="ConexaoSingleton" visibility="package"/>
+        <Field name="con" type="Connection" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="verificarExistencia" returnType="boolean" visibility="public">
+          <Argument type="UsuarioSenha_Model" name="u"/>
+        </Method>
+        <Method name="inserirUsuarioSenha" returnType="void" visibility="public">
+          <Argument type="UsuarioSenha_Model" name="u"/>
+        </Method>
+        <Method name="alterarUsuarioSenha" returnType="void" visibility="public">
+          <Argument type="UsuarioSenha_Model" name="u"/>
+        </Method>
+        <Method name="deletarUsuarioSenha" returnType="void" visibility="public">
+          <Argument type="UsuarioSenha_Model" name="u"/>
+        </Method>
+        <Method name="consultarUsuarioSenha" returnType="List&lt;UsuarioSenha_Model&gt;" visibility="public">
+          <Argument type="UsuarioModel" name="us"/>
+        </Method>
+        <Method name="consultarUsuarioSenha" returnType="UsuarioSenha_Model" visibility="public">
+          <Argument type="String" name="user"/>
+          <Argument type="String" name="senha"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Livro_Dao" package="alternativa" visibility="public" xPosition="620.0" yPosition="820.0">
+      <Fields>
+        <Field name="conec" type="ConexaoSingleton" visibility="package"/>
+        <Field name="con" type="Connection" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="cadastrarLivro" returnType="void" visibility="public">
+          <Argument type="LivroModel" name="livro"/>
+        </Method>
+        <Method name="alterarLivro" returnType="void" visibility="public">
+          <Argument type="LivroModel" name="livro"/>
+        </Method>
+        <Method name="deletarLivro" returnType="void" visibility="public">
+          <Argument type="LivroModel" name="livro"/>
+        </Method>
+        <Method name="consultarlivro_TodosOsDados_POR_Titulo" returnType="List&lt;LivroModel&gt;" visibility="public">
+          <Argument type="LivroModel" name="livro"/>
+        </Method>
+        <Method name="consultarlivro_TodosOsDados_POR_Tombamento" returnType="List&lt;LivroModel&gt;" visibility="public">
+          <Argument type="LivroModel" name="livro"/>
+        </Method>
+        <Method name="consultarlivro_TodosOsDados_POR_Autor" returnType="List&lt;LivroModel&gt;" visibility="public">
+          <Argument type="LivroModel" name="livro"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Curso_Dao" package="alternativa" visibility="public" xPosition="920.0" yPosition="820.0">
+      <Fields>
+        <Field name="conec" type="ConexaoSingleton" visibility="package"/>
+        <Field name="con" type="Connection" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="cadastrarCurso" returnType="void" visibility="public">
+          <Argument type="CursoModel" name="c"/>
+        </Method>
+        <Method name="alterarCurso" returnType="void" visibility="public">
+          <Argument type="CursoModel" name="c"/>
+        </Method>
+        <Method name="deletarCurso" returnType="void" visibility="public">
+          <Argument type="CursoModel" name="c"/>
+        </Method>
+        <Method name="consultar_PorNome" returnType="List&lt;CursoModel&gt;" visibility="public">
+          <Argument type="CursoModel" name="curso"/>
+        </Method>
+        <Method name="consultar_PorId" returnType="CursoModel" visibility="public">
+          <Argument type="CursoModel" name="curso"/>
+        </Method>
+        <Method name="consultar_Nomes_Id" returnType="List&lt;CursoModel&gt;" visibility="public"/>
+        <Method name="consultar_CapturarIdCursos" returnType="int" visibility="public">
+          <Argument type="String" name="a"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="CursoModel" package="model" visibility="public" xPosition="1220.0" yPosition="820.0">
+      <Fields>
+        <Field name="idCurso" type="int" visibility="private"/>
+        <Field name="nome" type="String" visibility="private"/>
+        <Field name="dataImplantacao" type="LocalDate" visibility="private"/>
+        <Field name="dataEncerramento" type="LocalDate" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getIdCurso" returnType="int" visibility="public"/>
+        <Method name="setIdCurso" returnType="void" visibility="public">
+          <Argument type="int" name="idCurso"/>
+        </Method>
+        <Method name="getNome" returnType="String" visibility="public"/>
+        <Method name="setNome" returnType="void" visibility="public">
+          <Argument type="String" name="nome"/>
+        </Method>
+        <Method name="getDataImplantacao" returnType="LocalDate" visibility="public"/>
+        <Method name="setDataImplantacao" returnType="void" visibility="public">
+          <Argument type="LocalDate" name="dataImplantacao"/>
+        </Method>
+        <Method name="getDataEncerramento" returnType="LocalDate" visibility="public"/>
+        <Method name="setDataEncerramento" returnType="void" visibility="public">
+          <Argument type="LocalDate" name="dataEncerramento"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="HistoricoLogin_Model" package="model" visibility="public" xPosition="1520.0" yPosition="820.0">
+      <Fields>
+        <Field name="idHistoricoLogin" type="int" visibility="private"/>
+        <Field name="dataHora" type="LocalDateTime" visibility="private"/>
+        <Field name="idUsuario" type="UsuarioModel" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getIdHistoricoLogin" returnType="int" visibility="public"/>
+        <Method name="setIdHistoricoLogin" returnType="void" visibility="public">
+          <Argument type="int" name="idLogin"/>
+        </Method>
+        <Method name="getDataHora" returnType="LocalDateTime" visibility="public"/>
+        <Method name="setDataHora" returnType="void" visibility="public">
+          <Argument type="LocalDateTime" name="dataHora"/>
+        </Method>
+        <Method name="getIdUsuario" returnType="UsuarioModel" visibility="public"/>
+        <Method name="setIdUsuario" returnType="void" visibility="public">
+          <Argument type="UsuarioModel" name="idUsuario"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="LivroModel" package="model" visibility="public" xPosition="1820.0" yPosition="820.0">
+      <Fields>
+        <Field name="autor" type="String" visibility="private"/>
+        <Field name="coAutor" type="String" visibility="private"/>
+        <Field name="local" type="String" visibility="private"/>
+        <Field name="classificacao" type="String" visibility="private"/>
+        <Field name="isbn" type="String" visibility="private"/>
+        <Field name="editora" type="String" visibility="private"/>
+        <Field name="volume" type="int" visibility="private"/>
+        <Field name="edicao" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="autor"/>
+          <Argument type="String" name="coAutor"/>
+          <Argument type="String" name="local"/>
+          <Argument type="String" name="classificacao"/>
+          <Argument type="String" name="isbn"/>
+          <Argument type="String" name="editora"/>
+          <Argument type="int" name="volume"/>
+          <Argument type="int" name="edicao"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="String" name="autor"/>
+          <Argument type="String" name="coAutor"/>
+          <Argument type="String" name="local"/>
+          <Argument type="String" name="classificacao"/>
+          <Argument type="String" name="isbn"/>
+          <Argument type="String" name="editora"/>
+          <Argument type="int" name="volume"/>
+          <Argument type="int" name="edicao"/>
+          <Argument type="int" name="idLivro"/>
+          <Argument type="String" name="titulo"/>
+          <Argument type="int" name="exemplar"/>
+          <Argument type="int" name="tombamento"/>
+          <Argument type="double" name="preco"/>
+          <Argument type="String" name="formaAquisicao"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getAutor" returnType="String" visibility="public"/>
+        <Method name="setAutor" returnType="void" visibility="public">
+          <Argument type="String" name="autor"/>
+        </Method>
+        <Method name="getCoAutor" returnType="String" visibility="public"/>
+        <Method name="setCoAutor" returnType="void" visibility="public">
+          <Argument type="String" name="coAutor"/>
+        </Method>
+        <Method name="getLocal" returnType="String" visibility="public"/>
+        <Method name="setLocal" returnType="void" visibility="public">
+          <Argument type="String" name="local"/>
+        </Method>
+        <Method name="getClassificacao" returnType="String" visibility="public"/>
+        <Method name="setClassificacao" returnType="void" visibility="public">
+          <Argument type="String" name="classificacao"/>
+        </Method>
+        <Method name="getIsbn" returnType="String" visibility="public"/>
+        <Method name="setIsbn" returnType="void" visibility="public">
+          <Argument type="String" name="isbn"/>
+        </Method>
+        <Method name="getEditora" returnType="String" visibility="public"/>
+        <Method name="setEditora" returnType="void" visibility="public">
+          <Argument type="String" name="editora"/>
+        </Method>
+        <Method name="getVolume" returnType="int" visibility="public"/>
+        <Method name="setVolume" returnType="void" visibility="public">
+          <Argument type="int" name="volume"/>
+        </Method>
+        <Method name="getEdicao" returnType="int" visibility="public"/>
+        <Method name="setEdicao" returnType="void" visibility="public">
+          <Argument type="int" name="edicao"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="AcervoModel" package="model" visibility="public" isAbstract="true" xPosition="2120.0" yPosition="820.0">
+      <Fields>
+        <Field name="id" type="int" visibility="private"/>
+        <Field name="titulo" type="String" visibility="private"/>
+        <Field name="exemplar" type="int" visibility="private"/>
+        <Field name="tombamento" type="int" visibility="private"/>
+        <Field name="preco" type="double" visibility="private"/>
+        <Field name="formaAquisicao" type="String" visibility="private"/>
+        <Field name="disponivel" type="boolean" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="int" name="idLivro"/>
+          <Argument type="String" name="titulo"/>
+          <Argument type="int" name="exemplar"/>
+          <Argument type="int" name="tombamento"/>
+          <Argument type="double" name="preco"/>
+          <Argument type="String" name="formaAquisicao"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getId" returnType="int" visibility="public"/>
+        <Method name="setId" returnType="void" visibility="public">
+          <Argument type="int" name="idLivro"/>
+        </Method>
+        <Method name="getTitulo" returnType="String" visibility="public"/>
+        <Method name="setTitulo" returnType="void" visibility="public">
+          <Argument type="String" name="titulo"/>
+        </Method>
+        <Method name="getExemplar" returnType="int" visibility="public"/>
+        <Method name="setExemplar" returnType="void" visibility="public">
+          <Argument type="int" name="exemplar"/>
+        </Method>
+        <Method name="getTombamento" returnType="int" visibility="public"/>
+        <Method name="setTombamento" returnType="void" visibility="public">
+          <Argument type="int" name="tombamento"/>
+        </Method>
+        <Method name="getPreco" returnType="double" visibility="public"/>
+        <Method name="setPreco" returnType="void" visibility="public">
+          <Argument type="double" name="preco"/>
+        </Method>
+        <Method name="getFormaAquisicao" returnType="String" visibility="public"/>
+        <Method name="setFormaAquisicao" returnType="void" visibility="public">
+          <Argument type="String" name="formaAquisicao"/>
+        </Method>
+        <Method name="getDisponivel" returnType="boolean" visibility="public"/>
+        <Method name="setDisponivel" returnType="void" visibility="public">
+          <Argument type="boolean" name="disponivel"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Cidade_Model" package="model" visibility="public" xPosition="20.0" yPosition="1220.0">
+      <Fields>
+        <Field name="idCidade" type="int" visibility="private"/>
+        <Field name="nome" type="String" visibility="private"/>
+        <Field name="idEstado" type="int" visibility="private"/>
+        <Field name="uf" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getIdCidade" returnType="int" visibility="public"/>
+        <Method name="setIdCidade" returnType="void" visibility="public">
+          <Argument type="int" name="idCidade"/>
+        </Method>
+        <Method name="getNome" returnType="String" visibility="public"/>
+        <Method name="setNome" returnType="void" visibility="public">
+          <Argument type="String" name="nome"/>
+        </Method>
+        <Method name="getIdEstado" returnType="int" visibility="public"/>
+        <Method name="setIdEstado" returnType="void" visibility="public">
+          <Argument type="int" name="idEstado"/>
+        </Method>
+        <Method name="getUf" returnType="String" visibility="public"/>
+        <Method name="setUf" returnType="void" visibility="public">
+          <Argument type="String" name="uf"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="UsuarioModel" package="model" visibility="public" xPosition="320.0" yPosition="1220.0">
+      <Fields>
+        <Field name="idUsuario" type="int" visibility="private"/>
+        <Field name="nome" type="String" visibility="private"/>
+        <Field name="cpf" type="String" visibility="private"/>
+        <Field name="rg" type="String" visibility="private"/>
+        <Field name="orgExp" type="String" visibility="private"/>
+        <Field name="sexo" type="String" visibility="private"/>
+        <Field name="dataNasc" type="LocalDate" visibility="private"/>
+        <Field name="tipoUsuario" type="String" visibility="private"/>
+        <Field name="telefone" type="String" visibility="private"/>
+        <Field name="email" type="String" visibility="private"/>
+        <Field name="nomeMae" type="String" visibility="private"/>
+        <Field name="nomePai" type="String" visibility="private"/>
+        <Field name="penalidade" type="boolean" visibility="private"/>
+        <Field name="curso" type="CursoModel" visibility="private"/>
+        <Field name="cidade" type="Cidade_Model" visibility="private"/>
+        <Field name="idCurso" type="int" visibility="private"/>
+        <Field name="idCidade" type="int" visibility="private"/>
+        <Field name="logradouro" type="String" visibility="private"/>
+        <Field name="numero" type="String" visibility="private"/>
+        <Field name="bairro" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getIdUsuario" returnType="int" visibility="public"/>
+        <Method name="setIdUsuario" returnType="void" visibility="public">
+          <Argument type="int" name="idUsuario"/>
+        </Method>
+        <Method name="getNome" returnType="String" visibility="public"/>
+        <Method name="setNome" returnType="void" visibility="public">
+          <Argument type="String" name="nome"/>
+        </Method>
+        <Method name="getCpf" returnType="String" visibility="public"/>
+        <Method name="setCpf" returnType="void" visibility="public">
+          <Argument type="String" name="cpf"/>
+        </Method>
+        <Method name="getRg" returnType="String" visibility="public"/>
+        <Method name="setRg" returnType="void" visibility="public">
+          <Argument type="String" name="rg"/>
+        </Method>
+        <Method name="getOrgExp" returnType="String" visibility="public"/>
+        <Method name="setOrgExp" returnType="void" visibility="public">
+          <Argument type="String" name="orgExp"/>
+        </Method>
+        <Method name="getSexo" returnType="String" visibility="public"/>
+        <Method name="setSexo" returnType="void" visibility="public">
+          <Argument type="String" name="sexo"/>
+        </Method>
+        <Method name="getDataNasc" returnType="LocalDate" visibility="public"/>
+        <Method name="setDataNasc" returnType="void" visibility="public">
+          <Argument type="LocalDate" name="dataNasc"/>
+        </Method>
+        <Method name="getTipoUsuario" returnType="String" visibility="public"/>
+        <Method name="setTipoUsuario" returnType="void" visibility="public">
+          <Argument type="String" name="tipoUsuario"/>
+        </Method>
+        <Method name="getTelefone" returnType="String" visibility="public"/>
+        <Method name="setTelefone" returnType="void" visibility="public">
+          <Argument type="String" name="telefone"/>
+        </Method>
+        <Method name="getEmail" returnType="String" visibility="public"/>
+        <Method name="setEmail" returnType="void" visibility="public">
+          <Argument type="String" name="email"/>
+        </Method>
+        <Method name="getNomeMae" returnType="String" visibility="public"/>
+        <Method name="setNomeMae" returnType="void" visibility="public">
+          <Argument type="String" name="nomeMae"/>
+        </Method>
+        <Method name="getNomePai" returnType="String" visibility="public"/>
+        <Method name="setNomePai" returnType="void" visibility="public">
+          <Argument type="String" name="nomePai"/>
+        </Method>
+        <Method name="getPenalidade" returnType="boolean" visibility="public"/>
+        <Method name="setPenalidade" returnType="void" visibility="public">
+          <Argument type="boolean" name="penalidade"/>
+        </Method>
+        <Method name="getCurso" returnType="CursoModel" visibility="public"/>
+        <Method name="setCurso" returnType="void" visibility="public">
+          <Argument type="CursoModel" name="curso"/>
+        </Method>
+        <Method name="getCidade" returnType="Cidade_Model" visibility="public"/>
+        <Method name="setCidade" returnType="void" visibility="public">
+          <Argument type="Cidade_Model" name="idCidade"/>
+        </Method>
+        <Method name="getLogradouro" returnType="String" visibility="public"/>
+        <Method name="setLogradouro" returnType="void" visibility="public">
+          <Argument type="String" name="logradouro"/>
+        </Method>
+        <Method name="getNumero" returnType="String" visibility="public"/>
+        <Method name="setNumero" returnType="void" visibility="public">
+          <Argument type="String" name="numero"/>
+        </Method>
+        <Method name="getBairro" returnType="String" visibility="public"/>
+        <Method name="setBairro" returnType="void" visibility="public">
+          <Argument type="String" name="bairro"/>
+        </Method>
+        <Method name="getIdCurso" returnType="int" visibility="public"/>
+        <Method name="setIdCurso" returnType="void" visibility="public">
+          <Argument type="int" name="idCurso"/>
+        </Method>
+        <Method name="getIdCidade" returnType="int" visibility="public"/>
+        <Method name="setIdCidade" returnType="void" visibility="public">
+          <Argument type="int" name="idCidade"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="UsuarioSenha_Model" package="model" visibility="public" xPosition="620.0" yPosition="1220.0">
+      <Fields>
+        <Field name="idUsuarioSenha" type="int" visibility="private"/>
+        <Field name="usuario" type="UsuarioModel" visibility="private"/>
+        <Field name="idUsuario" type="int" visibility="private"/>
+        <Field name="userName" type="String" visibility="private"/>
+        <Field name="senha" type="String" visibility="private"/>
+        <Field name="permissao" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getIdUsuarioSenha" returnType="int" visibility="public"/>
+        <Method name="setIdUsuarioSenha" returnType="void" visibility="public">
+          <Argument type="int" name="idUsuarioSenha"/>
+        </Method>
+        <Method name="getUserName" returnType="String" visibility="public"/>
+        <Method name="setUserName" returnType="void" visibility="public">
+          <Argument type="String" name="userName"/>
+        </Method>
+        <Method name="getSenha" returnType="String" visibility="public"/>
+        <Method name="setSenha" returnType="void" visibility="public">
+          <Argument type="String" name="senha"/>
+        </Method>
+        <Method name="getPermissao" returnType="String" visibility="public"/>
+        <Method name="setPermissao" returnType="void" visibility="public">
+          <Argument type="String" name="permissao"/>
+        </Method>
+        <Method name="getUsuario" returnType="UsuarioModel" visibility="public"/>
+        <Method name="setUsuario" returnType="void" visibility="public">
+          <Argument type="UsuarioModel" name="usuario"/>
+        </Method>
+        <Method name="getIdUsuario" returnType="int" visibility="public"/>
+        <Method name="setIdUsuario" returnType="void" visibility="public">
+          <Argument type="int" name="idUsuario"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="RevistaModel" package="model" visibility="public" xPosition="920.0" yPosition="1220.0">
+      <Fields>
+        <Field name="issn" type="String" visibility="private"/>
+        <Field name="periodicidade" type="String" visibility="private"/>
+        <Field name="volume" type="int" visibility="private"/>
+        <Field name="numero" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="issn"/>
+          <Argument type="String" name="periodicidade"/>
+          <Argument type="int" name="volume"/>
+          <Argument type="int" name="numero"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="String" name="issn"/>
+          <Argument type="String" name="periodicidade"/>
+          <Argument type="int" name="volume"/>
+          <Argument type="int" name="numero"/>
+          <Argument type="int" name="id"/>
+          <Argument type="String" name="titulo"/>
+          <Argument type="int" name="exemplar"/>
+          <Argument type="int" name="tombamento"/>
+          <Argument type="double" name="preco"/>
+          <Argument type="String" name="formaAquisicao"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getIssn" returnType="String" visibility="public"/>
+        <Method name="setIssn" returnType="void" visibility="public">
+          <Argument type="String" name="issn"/>
+        </Method>
+        <Method name="getPeriodicidade" returnType="String" visibility="public"/>
+        <Method name="setPeriodicidade" returnType="void" visibility="public">
+          <Argument type="String" name="periodicidade"/>
+        </Method>
+        <Method name="getVolume" returnType="int" visibility="public"/>
+        <Method name="setVolume" returnType="void" visibility="public">
+          <Argument type="int" name="volume"/>
+        </Method>
+        <Method name="getNumero" returnType="int" visibility="public"/>
+        <Method name="setNumero" returnType="void" visibility="public">
+          <Argument type="int" name="numero"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Devolucao_Model" package="model" visibility="public" xPosition="1220.0" yPosition="1220.0">
+      <Fields>
+        <Field name="idDevolucao" type="int" visibility="private"/>
+        <Field name="dataHoraDevolucao" type="LocalDateTime" visibility="private"/>
+        <Field name="idUsuario" type="UsuarioModel" visibility="private"/>
+        <Field name="idLivro" type="LivroModel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="UsuarioModel" name="idUsuario"/>
+          <Argument type="LivroModel" name="idLivro"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getIdDevolucao" returnType="int" visibility="public"/>
+        <Method name="setIdDevolucao" returnType="void" visibility="public">
+          <Argument type="int" name="idDevolucao"/>
+        </Method>
+        <Method name="getDataHoraDevolucao" returnType="LocalDateTime" visibility="public"/>
+        <Method name="setDataHoraDevolucao" returnType="void" visibility="public">
+          <Argument type="LocalDateTime" name="dataHoraDevolucao"/>
+        </Method>
+        <Method name="getIdUsuario" returnType="UsuarioModel" visibility="public"/>
+        <Method name="setIdUsuario" returnType="void" visibility="public">
+          <Argument type="UsuarioModel" name="idUsuario"/>
+        </Method>
+        <Method name="getIdLivro" returnType="LivroModel" visibility="public"/>
+        <Method name="setIdLivro" returnType="void" visibility="public">
+          <Argument type="LivroModel" name="idLivro"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Emprestimo_Model" package="model" visibility="public" xPosition="1520.0" yPosition="1220.0">
+      <Fields>
+        <Field name="idEmprestimo" type="int" visibility="private"/>
+        <Field name="dataEntrega" type="LocalDateTime" visibility="private"/>
+        <Field name="dataHoraEmprestimo" type="LocalDateTime" visibility="private"/>
+        <Field name="idUsuario" type="UsuarioModel" visibility="private"/>
+        <Field name="idLivro" type="LivroModel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="UsuarioModel" name="idUsuario"/>
+          <Argument type="LivroModel" name="idLivro"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getIdEmprestimo" returnType="int" visibility="public"/>
+        <Method name="setIdEmprestimo" returnType="void" visibility="public">
+          <Argument type="int" name="idEmprestimo"/>
+        </Method>
+        <Method name="getDataEntrega" returnType="LocalDateTime" visibility="public"/>
+        <Method name="setDataEntrega" returnType="void" visibility="public">
+          <Argument type="LocalDateTime" name="dataEntrega"/>
+        </Method>
+        <Method name="getDataHoraEmprestimo" returnType="LocalDateTime" visibility="public"/>
+        <Method name="setDataHoraEmprestimo" returnType="void" visibility="public">
+          <Argument type="LocalDateTime" name="dataHoraEmprestimo"/>
+        </Method>
+        <Method name="getIdUsuario" returnType="UsuarioModel" visibility="public"/>
+        <Method name="setIdUsuario" returnType="void" visibility="public">
+          <Argument type="UsuarioModel" name="idUsuario"/>
+        </Method>
+        <Method name="getIdLivro" returnType="LivroModel" visibility="public"/>
+        <Method name="setIdLivro" returnType="void" visibility="public">
+          <Argument type="LivroModel" name="idLivro"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="MidiasModel" package="model" visibility="public" xPosition="1820.0" yPosition="1220.0">
+      <Fields>
+        <Field name="gravadora" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="gravadora"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="String" name="gravadora"/>
+          <Argument type="int" name="idLivro"/>
+          <Argument type="String" name="titulo"/>
+          <Argument type="int" name="exemplar"/>
+          <Argument type="int" name="tombamento"/>
+          <Argument type="double" name="preco"/>
+          <Argument type="String" name="formaAquisicao"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getGravadora" returnType="String" visibility="public"/>
+        <Method name="setGravadora" returnType="void" visibility="public">
+          <Argument type="String" name="gravadora"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Renovacao_Model" package="model" visibility="public" xPosition="2120.0" yPosition="1220.0">
+      <Fields>
+        <Field name="idRenovacao" type="int" visibility="private"/>
+        <Field name="dataHoraRenovacao" type="LocalDateTime" visibility="private"/>
+        <Field name="dataEntrega" type="LocalDateTime" visibility="private"/>
+        <Field name="idUsuario" type="UsuarioModel" visibility="private"/>
+        <Field name="idLivro" type="LivroModel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="UsuarioModel" name="idUsuario"/>
+          <Argument type="LivroModel" name="idLivro"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getIdRenovacao" returnType="int" visibility="public"/>
+        <Method name="setIdRenovacao" returnType="void" visibility="public">
+          <Argument type="int" name="idRenovacao"/>
+        </Method>
+        <Method name="getDataHoraRenovacao" returnType="LocalDateTime" visibility="public"/>
+        <Method name="setDataHoraRenovacao" returnType="void" visibility="public">
+          <Argument type="LocalDateTime" name="dataHoraRenovacao"/>
+        </Method>
+        <Method name="getDataEntrega" returnType="LocalDateTime" visibility="public"/>
+        <Method name="setDataEntrega" returnType="void" visibility="public">
+          <Argument type="LocalDateTime" name="dataEntrega"/>
+        </Method>
+        <Method name="getIdUsuario" returnType="UsuarioModel" visibility="public"/>
+        <Method name="setIdUsuario" returnType="void" visibility="public">
+          <Argument type="UsuarioModel" name="idUsuario"/>
+        </Method>
+        <Method name="getIdLivro" returnType="LivroModel" visibility="public"/>
+        <Method name="setIdLivro" returnType="void" visibility="public">
+          <Argument type="LivroModel" name="idLivro"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Calcula_Devolucoes_Penalidade" package="controler" visibility="public" xPosition="20.0" yPosition="1620.0">
+      <Fields>
+        <Field name="tempoPermitido" type="int" visibility="private"/>
+        <Field name="tempoAtraso" type="int" visibility="private"/>
+        <Field name="tempoPenalidade" type="int" visibility="private"/>
+        <Field name="dataLiberado" type="LocalDate" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="LocalDateTime" name="fim"/>
+          <Argument type="LocalDateTime" name="inicio"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="calcularDiasAtraso" returnType="void" visibility="private">
+          <Argument type="LocalDateTime" name="fim"/>
+          <Argument type="LocalDateTime" name="inicio"/>
+        </Method>
+        <Method name="calcularPenalidade" returnType="void" visibility="private"/>
+        <Method name="liberadoApartirDe" returnType="void" visibility="private"/>
+        <Method name="getTempoAtraso" returnType="int" visibility="public"/>
+        <Method name="getDataLiberado" returnType="LocalDate" visibility="public"/>
+        <Method name="getTempoPenalidade" returnType="int" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="FormataDatas" package="controler" visibility="public" xPosition="320.0" yPosition="1620.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="Data_Para_BancoDados" returnType="LocalDate" visibility="public">
+          <Argument type="String" name="data"/>
+        </Method>
+        <Method name="Data_Para_ExibirNaTela" returnType="String" visibility="public">
+          <Argument type="LocalDate" name="data"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ValidaCPF" package="controler" visibility="public" xPosition="620.0" yPosition="1620.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="verificarCPF" returnType="boolean" visibility="public">
+          <Argument type="String" name="CPF"/>
+        </Method>
+        <Method name="imprimeCPF" returnType="String" visibility="public" isStatic="true">
+          <Argument type="String" name="CPF"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="cursoModel" source="views.Consultar_Usuarios" target="model.CursoModel" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="formata" source="views.Cadastro_Aluno" target="controler.FormataDatas" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="tcus" source="views.Tela_Principal" target="views.Tela_Cadastrar_Usuario_Senha" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="model.Renovacao_Model" target="model.UsuarioModel" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="idUsuario" source="model.Emprestimo_Model" target="model.UsuarioModel" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="alternativa.Curso_Dao" target="model.CursoModel" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="idUsuario" source="model.Devolucao_Model" target="model.UsuarioModel" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="usuarioModel" source="views.Cadastro_Aluno" target="model.UsuarioModel" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="tpa" source="views.Tela_Principal" target="views.Tela_Pesquisar_Livro" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="model.MidiasModel" target="model.AcervoModel"/>
+    <HasRelation name="usuarioDao" source="views.Consultar_Usuarios" target="alternativa.Usuario_Dao" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="conec" source="alternativa.Curso_Dao" target="alternativa.ConexaoSingleton" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="cidade" source="model.UsuarioModel" target="model.Cidade_Model" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="instancia" source="alternativa.ConexaoSingleton" target="alternativa.ConexaoSingleton" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="cursoDao" source="views.Consultar_Usuarios" target="alternativa.Curso_Dao" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="conec" source="alternativa.Devolucao_Dao" target="alternativa.ConexaoSingleton" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="model.Renovacao_Model" target="model.LivroModel" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="cidadeDao" source="views.Cadastro_Aluno" target="alternativa.Cidade_Dao" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="conec" source="alternativa.Usuario_Dao" target="alternativa.ConexaoSingleton" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="cidadeModel" source="views.Cadastro_Aluno" target="alternativa.Cidade_Dao" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="model.UsuarioSenha_Model" target="model.UsuarioModel" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="usuario" source="model.UsuarioSenha_Model" target="model.UsuarioModel" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="cidadeDao" source="views.Consultar_Usuarios" target="alternativa.Cidade_Dao" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="conec" source="alternativa.Midias_Dao" target="alternativa.ConexaoSingleton" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="conec" source="alternativa.UsuarioSenha_Dao" target="alternativa.ConexaoSingleton" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="idUsuario" source="model.Renovacao_Model" target="model.UsuarioModel" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="alternativa.Midias_Dao" target="model.MidiasModel" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="conec" source="alternativa.Emprestimo_Dao" target="alternativa.ConexaoSingleton" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="model.Emprestimo_Model" target="model.LivroModel" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="model.UsuarioModel" target="model.CursoModel" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="alternativa.UsuarioSenha_Dao" target="model.UsuarioSenha_Model" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="alternativa.Revista_Dao" target="model.RevistaModel" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="usuarioModel" source="views.Consultar_Usuarios" target="model.UsuarioModel" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="usuarioDao" source="views.Cadastro_Aluno" target="alternativa.Usuario_Dao" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="alternativa.Emprestimo_Dao" target="model.Emprestimo_Model" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="ld" source="views.Tela_Pesquisar_Livro" target="alternativa.Livro_Dao" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="tcu" source="views.Tela_Principal" target="views.Tela_Cadastrar_Usuario" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="alternativa.HistoricoLogin_Dao" target="model.UsuarioSenha_Model" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="model.Devolucao_Model" target="model.UsuarioModel" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="formatar" source="views.Consultar_Usuarios" target="controler.FormataDatas" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="formata" source="views.Consultar_Usuarios" target="controler.FormataDatas" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="idLivro" source="model.Devolucao_Model" target="model.LivroModel" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="alternativa.Usuario_Dao" target="model.UsuarioModel" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="alternativa.ConexaoSingleton" target="alternativa.ConexaoSingleton" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="conec" source="alternativa.Livro_Dao" target="alternativa.ConexaoSingleton" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="cursoModel" source="views.Cadastro_Aluno" target="model.CursoModel" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="alternativa.Devolucao_Dao" target="model.Devolucao_Model" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="model.Emprestimo_Model" target="model.UsuarioModel" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="conec" source="alternativa.HistoricoLogin_Dao" target="alternativa.ConexaoSingleton" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="idLivro" source="model.Emprestimo_Model" target="model.LivroModel" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="pl" source="views.Tela_Principal" target="views.Tela_Pesquisar_Livro" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="alternativa.HistoricoLogin_Dao" target="model.UsuarioModel" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="alternativa.Cidade_Dao" target="model.Cidade_Model" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="model.Devolucao_Model" target="model.LivroModel" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="conec" source="alternativa.Renovacao_Dao" target="alternativa.ConexaoSingleton" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="idLivro" source="model.Renovacao_Model" target="model.LivroModel" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="curso" source="model.UsuarioModel" target="model.CursoModel" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="x" source="views.Tela_Principal" target="model.UsuarioSenha_Model" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="l" source="views.Tela_Pesquisar_Livro" target="model.LivroModel" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="idUsuario" source="model.HistoricoLogin_Model" target="model.UsuarioModel" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="conec" source="alternativa.Cidade_Dao" target="alternativa.ConexaoSingleton" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="alternativa.Renovacao_Dao" target="model.Renovacao_Model" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="model.RevistaModel" target="model.AcervoModel"/>
+    <HasRelation name="cursoDao" source="views.Cadastro_Aluno" target="alternativa.Curso_Dao" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="model.HistoricoLogin_Model" target="model.UsuarioModel" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="alternativa.Livro_Dao" target="model.LivroModel" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="model.LivroModel" target="model.AcervoModel"/>
+    <UseRelation source="model.UsuarioModel" target="model.Cidade_Model" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="conec" source="alternativa.Revista_Dao" target="alternativa.ConexaoSingleton" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
